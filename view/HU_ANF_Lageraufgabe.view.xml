@@ -1,0 +1,59 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="sap.ui.zewm.HU_ANF.controller.HU_ANF_Lageraufgabe">
+	<Panel headerText="{i18n>lageraufgabe}" class="sapUiResponsiveMargin" width="auto">
+		<content>
+			<l:Grid id="__grid0" defaultSpan="XL6 L6 M6 S12">
+				<l:content>
+					<VBox width="100%" direction="Column" id="__vbox0">
+						<items direction="Row">
+							<Panel id="__panel1">
+								<Label text="{i18n>von-HU}" width="100%" id="__label4"/>
+								<Input width="100%" id="vonHu" editable="false" value="{selHu>/vonHu}"/>
+								<Label text="{i18n>Vonlagerplatz}" width="100%" id="__label5"/>
+								<Input width="25%" id="vltyp" editable="false" value="{selHu>/vlp/vltyp}"/>
+								<Input width="25%" id="vlber" editable="false" value="{selHu>/vlp/vlber}"/>
+								<Input width="50%" id="vlpla" editable="false" value="{selHu>/vlp/vlpla}"/>
+								<Label text="{i18n>HU-Typ}" width="100%" id="__label6"/>
+								<Input width="100%" id="huTyp" editable="false" value="{selHu>/huTyp}"/>
+							</Panel>
+						</items>
+					</VBox>
+					<VBox width="100%" direction="Column" id="__vbox1">
+						<items>
+							<Label text="{i18n>HU-Identifikation}" width="100%" id="__label3"/>
+						</items>
+					</VBox>
+					<List id="HU_InfoTable" items="{selHu>/huInfoTable}">
+						<items>
+							<StandardListItem title="{selHu>huInfo}" info="{selHu>idArt}"/>
+						</items>
+					</List>
+				</l:content>
+			</l:Grid>
+		</content>
+	</Panel>
+	<Panel id="__panel3" class="sapUiResponsiveMargin" width="auto">
+		<content>
+			<IconTabBar selectedKey="AnlegenTab" id="__bar2" expanded="false">
+				<items>
+					<IconTabFilter text="Anlegen" showAll="true" id="AnlegenTab">
+						<content>
+							<Label text="{i18n>Nachlagerplatz}" width="100%" id="__label2"/>
+							<Input width="25%" id="nltyp" editable="false"/>
+							<Input width="25%" id="nlber" editable="false"/>
+							<Input width="50%" id="nlpla" required="true" showValueHelp="true" valueHelpRequest="onShowNlpHelp"/>
+							<Label text="{i18n>Auslagerungsgrund}" width="100%" id="__label7"/>
+							<Input width="80%" id="ausl_grund"/>
+							<Button text="{i18n>Btn_Anlegen}" width="100px" id="__button0"/>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter text="Umlagern" showAll="true" id="UmlagernTab">
+						<content>
+							<ToolbarSpacer/>
+							<Button text="{i18n>Btn_Umlagern}" width="100px" id="__button4"/>
+						</content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+	</Panel>
+</mvc:View>

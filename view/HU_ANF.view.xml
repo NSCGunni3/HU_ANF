@@ -1,0 +1,44 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.ui.zewm.HU_ANF.controller.HU_ANF" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
+				<headerContent>
+					<Button text="{i18n>lgnum}" icon="sap-icon://key-user-settings" press="onChangeLgnum"/>
+					<Button id="showLogBtn" text="{i18n>log}" icon="sap-icon://inspection" press="onShowLog"/>
+				</headerContent>
+				<content>
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form0">
+					    <sap.ui.layout.form:formContainers>
+					        <sap.ui.layout.form:FormContainer title="{i18n>search_title}" id="__container0">
+					            <sap.ui.layout.form:formElements>
+					                <sap.ui.layout.form:FormElement label="{i18n>label_huid}" id="__element0">
+					                    <sap.ui.layout.form:fields>
+					                        <Input width="100%" id="__input0" value="{/huId}"/>
+					                    </sap.ui.layout.form:fields>
+					                </sap.ui.layout.form:FormElement>
+					                <sap.ui.layout.form:FormElement label="{i18n>label_fauf}" id="__element1">
+					                    <sap.ui.layout.form:fields>
+					                        <Input width="100%" id="__input1" value="{/fauf}"/>
+					                    </sap.ui.layout.form:fields>
+					                </sap.ui.layout.form:FormElement>
+					                <sap.ui.layout.form:FormElement label="{i18n>label_rfid}" id="__element2">
+					                    <sap.ui.layout.form:fields>
+					                        <Input width="100%" id="__input2" value="{/rfid}"/>
+					                        <Button text="{i18n>btn_search}" width="100px" id="btn_search" press="onSearch"/>
+					                    </sap.ui.layout.form:fields>
+					                </sap.ui.layout.form:FormElement>
+					            </sap.ui.layout.form:formElements>
+					        </sap.ui.layout.form:FormContainer>
+					    </sap.ui.layout.form:formContainers>
+					    <sap.ui.layout.form:layout>
+					        <sap.ui.layout.form:ResponsiveGridLayout id="__layout0"/>
+					    </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+					<mvc:XMLView viewName="sap.ui.zewm.HU_ANF.view.HU_ANF_Lageraufgabe" id="callView" visible="false"/>
+				</content>
+				<content id="phase2">
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

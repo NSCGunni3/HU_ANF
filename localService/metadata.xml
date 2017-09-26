@@ -1,0 +1,16 @@
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="sap/ui/zewm/HU_ANF">
+            <EntityType Name="HandlingUnit">
+                <Property Name="huId" Type="Edm.String"/>
+                <Property Name="fauf" Type="Edm.String"/>
+                <Property Name="rfid" Type="Edm.String"/>
+                <Property Name="vonHu" Type="Edm.String"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

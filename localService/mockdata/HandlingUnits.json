@@ -1,0 +1,89 @@
+[{
+		"huId": "12345",
+		"fauf": "12345",
+		"rfid": "12345",
+
+		"vonHu": "Testwert1",
+		"vlp": {
+			"vltyp": "vltyp1",
+			"vlber": "vlber1",
+			"vlpla": "vlpla1"
+		},
+		"huTyp": "hutyp1",
+		"huInfoTable": [{
+			"huInfo": "huident11",
+			"idArt": "123"
+		}, {
+			"huInfo": "huident12",
+			"idArt": "234"
+		}, {
+			"huInfo": "huident13",
+			"idArt": "345"
+		}]
+	}, {
+		"huId": "23456",
+		"fauf": "23456",
+		"rfid": "23456",
+
+		"vonHu": "Testwert2",
+		"vlp": {
+			"vltyp": "vltyp2",
+			"vlber": "vlber2",
+			"vlpla": "vlpla2"
+		},
+		"huTyp": "hutyp2",
+		"huInfoTable": [{
+			"huInfo": "huident21",
+			"idArt": "456"
+		}, {
+			"huInfo": "huident22",
+			"idArt": "567"
+		}, {
+			"huInfo": "huident23",
+			"idArt": "678"
+		}]
+	}, {
+		"huId": "34567",
+		"fauf": "34567",
+		"rfid": "34567",
+
+		"vonHu": "Testwert3",
+		"vlp": {
+			"vltyp": "vltyp3",
+			"vlber": "vlber3",
+			"vlpla": "vlpla3"
+		},
+		"huTyp": "hutyp3",
+		"huInfoTable": [{
+			"huInfo": "huident31",
+			"idArt": "789"
+		}, {
+			"huInfo": "huident32",
+			"idArt": "890"
+		}, {
+			"huInfo": "huident33",
+			"idArt": "901"
+		}]
+	}, {
+		"huId": "45678",
+		"fauf": "45678",
+		"rfid": "45678",
+
+		"vonHu": "Testwert4",
+		"vlp": {
+			"vltyp": "vltyp4",
+			"vlber": "vlber4",
+			"vlpla": "vlpla4"
+		},
+		"huTyp": "hutyp4",
+		"huInfoTable": [{
+			"huInfo": "huident41",
+			"idArt": "012"
+		}, {
+			"huInfo": "huident42",
+			"idArt": "123"
+		}, {
+			"huInfo": "huident43",
+			"idArt": "234"
+		}]
+	}]
